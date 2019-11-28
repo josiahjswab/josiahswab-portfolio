@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  // background: rgb(0, 74, 89);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(0, 74, 89, 1) 0%,
+  //   rgba(156, 159, 130, 1) 100%
+  // );
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+// Cascading Rules
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.block-margin {
+  margin: 1em;
+}
+.block-padding-sm {
+  padding: 1em;
+}
+.block-padding-md {
+  padding: 2em;
+}
+.spacer-sm {
+  height: 1em;
+  display: block;
+  width: 100%;
+}
+//Style Rules
+.shadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.shadow2 {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px transparent,
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+//Componenets
+.header {
+  justify-content: start;
+  img {
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+  }
+}
+.project {
+  justify-content: center;
+  .card-container {
+    .card-bubble {
+      margin: 20px;
+      display: inline-block;
+      position: relative;
+      height: auto;
+      background-color: white;
+      height: 400px;
+      width: 300px;
+    }
+    
+    .scale {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(.99);
+      }
+    }
+  }
+}
