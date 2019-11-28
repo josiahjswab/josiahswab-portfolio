@@ -2,45 +2,89 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   height: 100vh;
-  // background: rgb(0, 74, 89);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(0, 74, 89, 1) 0%,
-  //   rgba(156, 159, 130, 1) 100%
-  // );
+  height: 1000px;
+
+  background: rgb(74, 112, 122);
+  background: linear-gradient(
+    180deg,
+    rgba(74, 112, 122, 1) 0%,
+    rgba(221, 221, 218, 1) 100%
+  );
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 // Cascading Rules
+
+// flex
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .column {
   flex-direction: column;
 }
+
 .row {
   flex-direction: row;
 }
+
+.align-start {
+  align-items: start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+// spacing
 .block-margin {
   margin: 1em;
 }
+
 .block-padding-sm {
   padding: 1em;
 }
+
 .block-padding-md {
   padding: 2em;
 }
+
 .spacer-sm {
   height: 1em;
   display: block;
   width: 100%;
 }
-//Style Rules
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+// something about emphasis styling
 .shadow {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -49,32 +93,99 @@ body {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px transparent,
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
-//Componenets
+// fonts
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// effect
+
+.scale {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+// Components start here. Maybe will seperate into style sheet components.
 .header {
-  justify-content: start;
+  position: fixed;
+  width: 100vw;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out;
+  transform: translate3d(0, -100%, 0);
   img {
-    border-bottom-left-radius: 30%;
-    border-top-right-radius: 30%;
+    position: absolute;
+    left: 2em;
+    top: 10em;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .navigation {
+    list-style: none;
+    font-size: 32px;
+    font-weight: bold;
+    li {
+      padding: 2px 6px;
+      border: 3px transparent solid;
+      transition: border 0.3s ease-in-out;
+
+      &:hover {
+        border: 3px black solid;
+      }
+    }
+  }
+}
+.bookmark {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 60px;
+  top: 12em;
+  background: #bbbb;
+  margin: 0 auto 60px auto;
+  z-index: -1;
+
+  &:after {
+    top: 100px;
+    content: "";
+    display: block;
+    position: relative;
+    border: 50px solid transparent;
+    border-bottom: 40px solid white;
+    border-color: #bbbb #bbbb transparent #bbbb;
+    z-index: -1;
   }
 }
 .project {
   justify-content: center;
+  overflow-x: scroll;
   .card-container {
-    .card-bubble {
-      margin: 20px;
-      display: inline-block;
-      position: relative;
-      height: auto;
-      background-color: white;
-      height: 400px;
-      width: 300px;
-    }
-    
-    .scale {
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        transform: scale(.99);
+    .outer-border {
+      border-top: 15px solid #4a4a4a;
+      border-right: 15px solid #242424;
+      border-left: 15px solid #4a4a4a;
+      border-bottom: 15px solid #4a4a4a;
+      margin: 30px;
+      .card-bubble {
+        height: auto;
+        background-color: black;
+        height: 350px;
+        width: 250px;
+        border-top: 15px solid #242424;
+        border-right: 15px solid #4a4a4a;
+        border-left: 15px solid #242424;
+        border-bottom: 15px solid #242424;
+        
+        img {
+          width: 100%;
+        }
       }
     }
   }
