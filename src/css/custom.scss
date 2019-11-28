@@ -116,6 +116,7 @@ body {
   background: rgb(255, 255, 255);
   transition: transform 0.3s ease-in-out;
   transform: translate3d(0, -100%, 0);
+  z-index: 1;
   img {
     position: absolute;
     left: 2em;
@@ -165,28 +166,33 @@ body {
 }
 .project {
   justify-content: center;
-  overflow-x: scroll;
+
   .card-container {
+    overflow-y: scroll;
+
     .outer-border {
-      border-top: 15px solid #4a4a4a;
-      border-right: 15px solid #242424;
-      border-left: 15px solid #4a4a4a;
-      border-bottom: 15px solid #4a4a4a;
+      border-top: 15px solid lighten(#000, 10%);
+      border-right: 15px solid #000;
+      border-left: 15px solid lighten(#000, 10%);
+      border-bottom: 15px solid lighten(#000, 10%);
       margin: 30px;
       .card-bubble {
         height: auto;
+        width: auto;
         background-color: black;
-        height: 350px;
-        width: 250px;
-        border-top: 15px solid #242424;
-        border-right: 15px solid #4a4a4a;
-        border-left: 15px solid #242424;
-        border-bottom: 15px solid #242424;
-        
+        border-top: 15px solid #000;
+        border-right: 15px solid lighten(#000, 10%);
+        border-left: 15px solid #000;
+        border-bottom: 15px solid #000;
+
         img {
-          width: 100%;
         }
       }
+    }
+    .test {
+      border: 30px solid #000;
+      border-top-color: lighten(#000, 20%);
+      border-bottom-color: lighten(#000, 20%);
     }
   }
 }
