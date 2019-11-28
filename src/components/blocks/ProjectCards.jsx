@@ -14,6 +14,7 @@ export default function ProjectCards() {
             <img
               className=""
               src={require("../../img/berserk.png")}
+              height= "400"
               alt="Josiah Swab"
             />
           </div>
@@ -25,6 +26,7 @@ export default function ProjectCards() {
             <img
               className=""
               src={require("../../img/berserk.png")}
+              height= "400"
               alt="Josiah Swab"
             />
           </div>

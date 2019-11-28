@@ -32,6 +32,7 @@ export default function Header() {
         <li className="block-margin">Projects</li>
         <li className="block-margin">Contact</li>
       </ul>
+      <div className="overlay-box"></div>
     </header>
   );
 }

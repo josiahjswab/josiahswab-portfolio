@@ -135,12 +135,23 @@ body {
     li {
       padding: 2px 6px;
       border: 3px transparent solid;
-      transition: border 0.3s ease-in-out;
-
+      transition: border 0.1s ease-in-out;
+      z-index: 3;
       &:hover {
         border: 3px black solid;
       }
     }
+  }
+
+  .overlay-box {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 135px;
+    border: solid 1px transparent;
+    border-radius: 10px 0px 0px 50px;
+    background: rgba(121, 121, 121, 0.102);
+    z-index: 2;
   }
 }
 .bookmark {
@@ -168,7 +179,7 @@ body {
   justify-content: center;
 
   .card-container {
-    overflow-y: scroll;
+    //   overflow-x: scroll;
 
     .outer-border {
       border-top: 15px solid lighten(#000, 10%);
@@ -184,15 +195,13 @@ body {
         border-right: 15px solid lighten(#000, 10%);
         border-left: 15px solid #000;
         border-bottom: 15px solid #000;
-
-        img {
-        }
       }
     }
     .test {
       border: 30px solid #000;
       border-top-color: lighten(#000, 20%);
       border-bottom-color: lighten(#000, 20%);
+      margin: 30px;
     }
   }
 }

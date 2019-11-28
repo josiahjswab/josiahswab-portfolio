@@ -6,6 +6,7 @@
   "scripts": {
     "start": "parcel build src/index.html",
     "dev": "NODE_ENV=development parcel src/index.html --open",
+    "windows": "SET NODE_ENV=development parcel src/index.html --open",
     "build": "NODE_ENV=production parcel build src/index.html"
   },
   "repository": {
