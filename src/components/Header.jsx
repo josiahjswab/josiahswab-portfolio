@@ -16,26 +16,23 @@ export default function Header() {
       style={{ transform: toggle }}
       className="header flex block-padding-sm shadow2"
     >
-        <img
-          className="img shadow"
-          src={require("../img/josiahswab.jpg")}
-          alt="Josiah Swab"
-          width="150"
-          onClick={toggleHeader}
-        />
-        <div className="bookmark" onClick={toggleHeader}></div>
+      <img
+        className="img shadow"
+        src={require("../img/josiahswab.jpg")}
+        alt="Josiah Swab"
+        width="150"
+        onClick={toggleHeader}
+      />
+      <div className="bookmark" onClick={toggleHeader}></div>
 
-      <div className="icons flex">
-        <img src={require("../img/mark.png")} alt="" height="80"/>
-        <img src={require("../img/linkedin.png")} alt="" height="80"/>
-        <img src={require("../img/email.png")} alt="" height="80"/>
+      <div className="navigation flex  align-end">
+        <p>Home</p>
+        <p>Projects</p>
+        <p>About</p>
+        <img src={require("../img/mark.png")} alt="" height="80" />
+        <img src={require("../img/linkedin.png")} alt="" height="80" />
+        <img src={require("../img/email.png")} alt="" height="80" />
       </div>
-      <ul className="navigation flex  align-end">
-        <li className="block-margin">Home</li>
-        <li className="block-margin">Projects</li>
-        <li className="block-margin">About</li>
-      </ul>
-      <div className="overlay-box"></div>
     </header>
   );
 }

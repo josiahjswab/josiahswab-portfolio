@@ -59,7 +59,7 @@ body {
 }
 
 .block-padding-sm {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .block-padding-md {
@@ -118,32 +118,27 @@ body {
   transition: transform 0.3s ease-in-out;
   transform: translate3d(0, -100%, 0);
   z-index: 1;
-  .icons {
-    img {
-      padding:0 10px;
-      &:nth-last-child(1) {
-        padding: 0 80px  0  10px;
-      }
-    }
-  }
   .img {
     position: absolute;
-    left: 2em;
-    top: 10em;
+    left: 1em;
+    top: 7em;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.03);
     }
-    &:hover ~.bookmark {
+    &:hover ~ .bookmark {
       transform: scale(1.03);
     }
   }
   .navigation {
-    list-style: none;
     font-size: 32px;
     font-weight: bold;
-    li {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    p {
+      margin: .5em 1em;
       padding: 2px 6px;
       border: 3px transparent solid;
       transition: border 0.1s ease-in-out;
@@ -151,6 +146,9 @@ body {
       &:hover {
         border: 3px black solid;
       }
+    }
+    img {
+      margin: 0 1em;
     }
   }
 
@@ -169,8 +167,8 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  left: 60px;
-  top: 12em;
+  left: 42px;
+  top: 9em;
   background: #bbbb;
   margin: 0 auto 60px auto;
   z-index: -1;
