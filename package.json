@@ -2,7 +2,7 @@
   "name": "react-parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development parcel public/index.html --open"
@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SanDiegoCodeSchool/react-parcel/issues"
+    "url": "https://github.com/josiahjswab"
   },
   "homepage": "",
   "dependencies": {
