@@ -29,9 +29,15 @@ export default function Header() {
         <p>Home</p>
         <p>Projects</p>
         <p>About</p>
-        <img src={require("../img/mark.png")} alt="" height="80" />
-        <img src={require("../img/linkedin.png")} alt="" height="80" />
-        <img src={require("../img/email.png")} alt="" height="80" />
+        <a href="https://github.com/josiahjswab" rel="noreferrer noopener" target="_blank">
+          <img src={require("../img/mark.png")} alt="" height="80" />
+        </a>
+        <a href="https://www.linkedin.com/in/josiah-swab-235ba7173/" rel="noreferrer noopener" target="_blank">
+          <img src={require("../img/linkedin.png")} alt="" height="80" />
+        </a>
+        <a href="mailto:josiahjswab@gmail.com" rel="noreferrer noopener" target="_blank">
+         <img src={require("../img/email.png")} alt="" height="80" />
+        </a>
       </div>
     </header>
   );
