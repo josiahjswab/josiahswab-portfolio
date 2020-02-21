@@ -2,6 +2,7 @@ import React from "react";
 import Card from './blocks/Card';
 
 export default function ProjectCards() {
+
   return (
     <div className="project block-padding-md flex column">
       <h1 className="">&#123; projects &#125;</h1>
@@ -19,6 +20,12 @@ export default function ProjectCards() {
           styles="test"
           imageSource={require("../img/movie-finder.jpg")}
           altDescription="redux movie finder"
+        />
+        <Card
+          link="https://unicode-cipher.herokuapp.com/"
+          styles="outer-border"
+          imageSource={require("../img/cipher.jpeg")}
+          altDescription="Unicode Cipher"
         />
       </div>
     </div>
