@@ -8,9 +8,9 @@ export default function Main() {
   return (
 
     <main className="main flex block-margin">
-      Hi, <br/>
-      I am glad your here! <br/>
-      Sorry, there isn't much to see right now but keep checking back and see how this portfolio grows!
+      Hey there, <br/>
+      I am glad your here! Sorry, there isn't much to see, I am working hard to change that. <br/>
+      Keep checking back and see how this portfolio changes!
     </main>
     
   );

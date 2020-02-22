@@ -20,10 +20,10 @@ export default function Header() {
         className="img shadow"
         src={require("../img/josiahswab.jpg")}
         alt="Josiah Swab"
-        width="150"
+        width="40"
         onClick={toggleHeader}
       />
-      <div className="bookmark" onClick={toggleHeader}></div>
+      {/* <div className="bookmark" onClick={toggleHeader}></div> */}
 
       <div className="navigation flex  align-end">
         <p>Home</p>
