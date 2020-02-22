@@ -194,12 +194,12 @@ body {
   .card-container {
     //   overflow-x: scroll;
 
-    .outer-border {
+    .border-style {
       border-top: .5em solid lighten(#000, 15%);
       border-right: .5em solid #000;
       border-left: .5em solid lighten(#000, 15%);
       border-bottom: .5em solid lighten(#000, 15%);
-      margin: 15px;
+      margin: 10px 30px;
       .card-bubble {
         height: auto;
         width: auto;
@@ -211,11 +211,11 @@ body {
       }
 
     }
-    .test {
+    .border-style2 {
       border: 1em solid #000;
       border-top-color: lighten(#000, 20%);
       border-bottom-color: lighten(#000, 20%);
-      margin: 15px;
+      margin: 10px 30px;
     }
     img {
       height: 200px;
@@ -224,7 +224,7 @@ body {
 }
 
 .my-name {
-  font-family: Impacto, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+  font-family: 'Alfa Slab One';
   text-align: center;
   margin: 0;
   -webkit-background-clip: text;
@@ -232,8 +232,8 @@ body {
   -webkit-mask-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#000),color-stop(.5,#000),color-stop(1,transparent));
   transition: background-position 1s, background-color 1s;
   text-align: center;
-  font-size: calc(28vw + 1rem);
-  font-weight: 900;;
+  font-size: calc(18vw + 1rem);
+  // font-weight: 800;
   line-height: 1;
   background-image: url("../img/headerbr.jpg");
   background-size: 110vw auto;
@@ -243,8 +243,8 @@ body {
 
 .section-title {
   margin-left: 10%;
-  font-family: Impacto, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 900;
+  font-family: 'Alfa Slab One', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  // font-weight: 700;
   color: #ffffff;
   opacity: 0.5;
 }

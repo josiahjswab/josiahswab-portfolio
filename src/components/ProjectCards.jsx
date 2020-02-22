@@ -11,19 +11,19 @@ export default function ProjectCards() {
         <div className='card-container flex wrap'>
           <Card
             link='https://berserk-lorem-ipsum.herokuapp.com/'
-            styles='outer-border'
+            styles='border-style'
             imageSource={require('../img/berserk.png')}
             altDescription='berserk lorem ipsum'
           />
           <Card
             link='https://blackasnight-movie-finder.herokuapp.com/'
-            styles='test'
+            styles='border-style2'
             imageSource={require('../img/movie-finder.jpg')}
             altDescription='redux movie finder'
           />
           <Card
             link='https://unicode-cipher.herokuapp.com/'
-            styles='outer-border'
+            styles='border-style'
             imageSource={require('../img/cipher.jpeg')}
             altDescription='Unicode Cipher'
           />

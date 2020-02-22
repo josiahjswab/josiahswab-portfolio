@@ -13,7 +13,6 @@ export default function App() {
       <ProjectCards />
       <Main />
       <Footer />
-      {/* <Footer/> */}
     </div>
   );
 }
