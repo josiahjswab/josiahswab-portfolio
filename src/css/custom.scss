@@ -114,19 +114,20 @@ body {
 }
 
 // Components start here. Maybe will seperate into style sheet components.
-.header {
+.navigation-overlay {
   position: fixed;
   width: 100%;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  background: rgb(255, 255, 255);
+  height: 100vh;
+  // justify-content: space-between;
+  // flex-direction: row-reverse;
+  background: rgba(255, 255, 255, 0.726);
   transition: transform 0.3s ease-in-out;
   transform: translate3d(0, -100%, 0);
   z-index: 1;
   .img {
     position: absolute;
     left: 1em;
-    top: 7em;
+    top: 103vh;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
     &:hover {
@@ -148,15 +149,20 @@ body {
       border: 3px transparent solid;
       transition: border 0.1s ease-in-out;
       z-index: 3;
+      border: 3px black solid;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.733);
       &:hover {
-        border: 3px black solid;
+        background: rgba(204, 204, 204, 0.829); 
       }
+    }
+    div {
+      margin: .5em 0 0 0
     }
     img {
       margin: 0 1em;
     }
   }
-
   .overlay-box {
     position: absolute;
     top: 0;
@@ -168,6 +174,7 @@ body {
     z-index: 2;
   }
 }
+
 .bookmark {
   position: absolute;
   width: 100px;
@@ -190,10 +197,15 @@ body {
     z-index: -1;
   }
 }
+
+.card-abs {
+  position: relative;
+  z-index: 2;
+}
+
 .project {
   .card-container {
     //   overflow-x: scroll;
-
     .border-style {
       border-top: .5em solid lighten(#000, 15%);
       border-right: .5em solid #000;
@@ -223,6 +235,16 @@ body {
   }
 }
 
+.card-info {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(121, 121, 121, 0.883);
+}
+
 .my-name {
   font-family: 'Alfa Slab One';
   text-align: center;
@@ -230,7 +252,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-mask-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#000),color-stop(.5,#000),color-stop(1,transparent));
-  transition: background-position 1s, background-color 1s;
+  // transition: background-position 1s, background-color 1s;
   text-align: center;
   font-size: calc(18vw + 1rem);
   // font-weight: 800;
