@@ -9,8 +9,8 @@ export default function App() {
     <div className="app-wrapper">
       <Header />
       <Headervs2 />
-      <Main />
       <ProjectCards />
+      <Main />
       {/* <Footer/> */}
     </div>
   );

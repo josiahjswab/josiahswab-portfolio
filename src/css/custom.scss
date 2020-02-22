@@ -191,8 +191,6 @@ body {
   }
 }
 .project {
-  justify-content: center;
-
   .card-container {
     //   overflow-x: scroll;
 
@@ -241,4 +239,12 @@ body {
   background-size: 110vw auto;
   background-repeat: no-repeat;
   background-position: 0px 15%;
+}
+
+.section-title {
+  margin-left: 10%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  opacity: 0.5;
 }
