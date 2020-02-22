@@ -8,9 +8,7 @@ export default function Card(props) {
       <div className={`hello scale ${styles}`}>
         <div className=" card-bubble flex shadow2 align-start">
           <img
-            className=""
             src={imageSource}
-            height= "300"
             alt={altDescription}
           />
         </div>

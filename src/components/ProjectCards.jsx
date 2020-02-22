@@ -5,10 +5,10 @@ export default function ProjectCards() {
 
   return (
     <div className="project block-padding-md flex column">
-      <h1 className="">Projects</h1>
+      <h1>Projects</h1>
       {/* TODO: Make the title  position: absolute */}
       <div className="spacer-sm" />
-      <div className="card-container flex">
+      <div className="card-container flex wrap">
         <Card
           link="https://berserk-lorem-ipsum.herokuapp.com/"
           styles="outer-border"
