@@ -14,6 +14,7 @@ export default function ProjectCards() {
             styles='border-style'
             imageSource={require('../img/berserk.png')}
             altDescription='berserk lorem ipsum'
+            description='This is a project made with passion.'
           />
           <Card
             link='https://blackasnight-movie-finder.herokuapp.com/'
