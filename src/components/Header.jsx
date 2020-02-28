@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Header() {
-  const [toggle, setToggle] = useState('translate3d(0, -100%, 0)');
+  const [toggle, setToggle] = useState('translate3d(0, 0, 0)');
 
   const toggleHeader = () => {
     if (toggle === 'translate3d(0, -100%, 0)') {
@@ -14,7 +14,7 @@ export default function Header() {
     <header
       onClick={toggleHeader}
       style={{ transform: toggle }}
-      className='header flex block-padding-sm shadow2'
+      className='navigation-overlay flex shadow2'
     >
       <img
         className='img shadow'
@@ -25,19 +25,21 @@ export default function Header() {
       />
       {/* <div className='bookmark' onClick={toggleHeader}></div> */}
 
-      <div className='navigation flex  align-end'>
+      <div className='navigation flex column  align-end'>
         <p>Home</p>
         <p>Projects</p>
         <p>About</p>
-        <a href='https://github.com/josiahjswab' rel='noreferrer noopener' target='_blank'>
-          <img src={require('../img/mark.png')} alt='' height='80' />
-        </a>
-        <a href='https://www.linkedin.com/in/josiah-swab-235ba7173/' rel='noreferrer noopener' target='_blank'>
-          <img src={require('../img/linkedin.png')} alt='' height='80' />
-        </a>
-        <a href='mailto:josiahjswab@gmail.com' rel='noreferrer noopener' target='_blank'>
-         <img src={require('../img/email.png')} alt='' height='80' />
-        </a>
+        <div className="flex wrap">
+          <a href='https://github.com/josiahjswab' rel='noreferrer noopener' target='_blank'>
+            <img src={require('../img/mark.png')} alt='github' height='80' />
+          </a>
+          <a href='https://www.linkedin.com/in/josiah-swab-235ba7173/' rel='noreferrer noopener' target='_blank'>
+            <img src={require('../img/linkedin.png')} alt='LinkedIN' height='80' />
+          </a>
+          <a href='mailto:josiahjswab@gmail.com' rel='noreferrer noopener' target='_blank'>
+          <img src={require('../img/email.png')} alt='Email' height='80' />
+          </a>
+        </div>
       </div>
     </header>
   );
