@@ -10,6 +10,7 @@ export default function Header() {
       setToggle('translate3d(0, -100%, 0)');
     }
   };
+
   return (
     <header
       onClick={toggleHeader}
@@ -23,7 +24,6 @@ export default function Header() {
         width='40'
         onClick={toggleHeader}
       />
-      {/* <div className='bookmark' onClick={toggleHeader}></div> */}
 
       <div className='navigation flex column  align-end'>
         <p>Home</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Headervs2 () {
+export default function NameBanner () {
   return(
     <header className='my-name'>
       JOSIAH
