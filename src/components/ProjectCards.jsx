@@ -5,7 +5,7 @@ export default function ProjectCards() {
 
   return (
     <>
-      <h1 className='section-title'>Projects</h1>
+      <h1 className='section-title block-margin'>Projects</h1>
       <div className='project flex column'>
         {/* TODO: Make the title  position: absolute */}
         <div className='card-container flex wrap'>
@@ -14,7 +14,7 @@ export default function ProjectCards() {
             styles='border-style'
             imageSource={require('../img/berserk.png')}
             altDescription='berserk lorem ipsum'
-            description='This is a project made with passion.'
+            description='Description about the project.'
           />
           <Card
             link='https://blackasnight-movie-finder.herokuapp.com/'

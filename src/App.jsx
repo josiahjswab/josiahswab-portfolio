@@ -10,8 +10,8 @@ export default function App() {
     <div className="app-wrapper">
       <Header />
       <NameBanner />
-      <ProjectCards />
       <Main />
+      <ProjectCards />
       <Footer />
     </div>
   );
