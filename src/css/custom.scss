@@ -118,79 +118,64 @@ body {
   
   // Components start here. Maybe will seperate into style sheet components.
   
-  .about {
-    img {
-      width: 300px;
-    }
-    padding: 10px;
-    section {
-      max-width: 320px;
-    }
+.about {
+  img {
+    width: 300px;
   }
+  padding: 10px;
+  section {
+    max-width: 320px;
+  }
+}
   
-  .navigation-overlay {
-    position: fixed;
-    width: 100%;
-    // height: 100%;
-    // justify-content: space-between;
-    // flex-direction: row-reverse;
-    background: rgba(187, 187, 187, 0.397);
-    transition: transform 0.2s ease-in-out;
-    transform: translate3d(0, -100%, 0);
-    z-index: 1;
-    // .img {
-      //   position: absolute;
-      //   left: 1em;
-      //   top: 103vh;
-      //   border-radius: 50%;
-      //   transition: all 0.3s ease-in-out;
-      //   &:hover {
-        //     transform: scale(1.03);
-        //   }
-        //   &:hover ~ .bookmark {
-          //     transform: scale(1.03);
-          //   }
-  // }
-  
-  .navigation {
-    font-size: 1.5em;
-    font-weight: bold;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    min-height: 100px;
-    margin-top: 10px;
-    p {
-      color: white;
-      margin: 10px;
-      padding: 1px 5px;
-      border: 3px transparent solid;
-      transition: border 0.1s ease-in-out;
-      z-index: 3;
-      border: 3px black solid;
-      border-radius: 10px;
-      background: rgb(0 0 0 / 67%);
-      &:hover {
-        background: rgba(0, 0, 0, 0.967); 
-      }
-    }
-    div {
-      // margin: .5em 0 0 0
-    }
-    img {
-      margin: 0 10px;
+.navigation-overlay {
+  position: fixed;
+  width: 100%;
+  background: rgba(187, 187, 187, 0.397);
+  transition: transform 0.2s ease-in-out;
+  transform: translate3d(0, -100%, 0);
+  z-index: 1;
+
+.navigation {
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+  p {
+    color: white;
+    margin: 10px;
+    padding: 1px 5px;
+    border: 3px transparent solid;
+    transition: border 0.1s ease-in-out;
+    z-index: 3;
+    border: 3px black solid;
+    border-radius: 10px;
+    background: rgb(0 0 0 / 67%);
+    &:hover {
+      background: rgba(0, 0, 0, 0.967); 
     }
   }
-  .overlay-box {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 135px;
-    border: solid 1px transparent;
-    border-radius: .5em 0px 0px 50px;
-    background: rgba(121, 121, 121, 0.102);
-    z-index: 2;
+  div {
+    // margin: .5em 0 0 0
   }
+  img {
+    margin: 0 10px;
+  }
+}
+
+.overlay-box {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 135px;
+  border: solid 1px transparent;
+  border-radius: .5em 0px 0px 50px;
+  background: rgba(121, 121, 121, 0.102);
+  z-index: 2;
+}
 }
 
 .nav-bar {
@@ -279,7 +264,7 @@ body {
   font-family: 'Alfa Slab One';
   text-align: center;
   margin: 0;
-  padding: 33px 0 0 0;
+  padding: 50px 0 0 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-mask-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#000),color-stop(.5,#000),color-stop(1,transparent));
@@ -305,5 +290,53 @@ body {
   margin: 0 0 10px 0;
   img {
     width: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navigation-overlay {
+    .navigation {
+      font-size: 1.5em;
+      font-weight: bold;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      min-height: 2em;
+      margin-top: 10px;
+      .nav-but {
+        flex-direction: column;
+
+      }
+      p {
+        color: black;
+        margin: 10px;
+        padding: 1px 5px;
+        transition: border 0.1s ease-in-out;
+        z-index: 3;
+        border: 0px transparent solid;
+        border-radius: 0px;
+        background: none;
+        &:hover {
+          background: rgba(0, 0, 0, 0.967); 
+        }
+      }
+      div {
+        // margin: .5em 0 0 0
+      }
+      img {
+        margin: 0 10px;
+    }
+    }
+  
+    .overlay-box {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 135px;
+      border: solid 1px transparent;
+      border-radius: .5em 0px 0px 50px;
+      background: rgba(121, 121, 121, 0.102);
+      z-index: 2;
+    }
   }
 }
