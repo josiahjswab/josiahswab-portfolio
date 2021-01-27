@@ -30,7 +30,7 @@ const App = () => {
             <NameBanner txt='WELCOME'/>
             <div className='spacer-sm'></div>
             <Cipher/>
-            <About/>
+            {/* <About/> */}
           </Route>
           <Route path='/about'>
             <NameBanner txt='ABOUT'/>

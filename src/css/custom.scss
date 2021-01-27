@@ -179,10 +179,12 @@ body {
 }
 
 .nav-bar {
+  position: absolute;
+  bottom:-20px;
   div {
     width: 25px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.664);
-    margin-bottom: 2px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 2px;
   }
 }
 
@@ -363,7 +365,7 @@ body {
   }
   
 }
-.footer {
+.footer-cipher {
   background: rgba(0, 0, 0, 0.192);
   max-width: 400px;
   font-size: 8px;
@@ -390,7 +392,7 @@ body {
     align-items: center;
   }
   .code-box {
-      max-width: 95%;
+      max-width: 80vw;
       max-height: 400px;
       textarea {
       max-width: 90%;

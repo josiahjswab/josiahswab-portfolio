@@ -11,7 +11,7 @@ export default function Header() {
     <header
       onClick={toggleHeader}
       style={{ 
-        transform: toggle ? 'translate3d(0, 0, 0)' : 'translate3d(0, -75px, 0)', 
+        transform: toggle ? 'translate3d(0, 0, 0)' : 'translate3d(0, -99%, 0)', 
         background: toggle ? 'rgb(255, 255, 255)' : 'rgba(187, 187, 187, 0.397)'
       }}
       className='navigation-overlay flex shadow2'

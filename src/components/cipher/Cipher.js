@@ -69,7 +69,7 @@ export default class Cipher extends React.Component {
                         clearDecoded={this.clearDecoded}
                     />
                 </div>
-                <div className='footer'>
+                <div className='footer-cipher'>
                     <p>104, 116, 116, 112, 115, 58, 47, 47, 103, 105, 116, 104, 117, 98, 46, 99, 111, 109, 47, 106, 111, 115, 105, 97, 104, 106, 115, 119, 97, 98, 47, 99, 105, 112, 104, 101, 114, </p>
                     <button 
                         className='footer-button' 
