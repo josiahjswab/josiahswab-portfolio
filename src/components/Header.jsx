@@ -38,6 +38,9 @@ export default function Header() {
           <a href='mailto:josiahjswab@gmail.com' rel='noreferrer noopener' target='_blank'>
           <img src={require('../img/email.png')} alt='Email' height='40' />
           </a>
+          <a href='https://www.codewars.com/users/Devobolo' rel='noreferrer noopener' target='_blank'>
+            <img src='https://www.codewars.com/users/Devobolo/badges/micro'/>
+          </a>
         </div>
         <section className='nav-bar'>
           <div></div>
