@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 export default function Header() {
-  const [toggle, setToggle] = useState('translate3d(0, 0, 0)');
+  const [toggle, setToggle] = useState(false);
 
   const toggleHeader = () => {
-    if (toggle === 'translate3d(0, -67%, 0)') {
-      setToggle('translate3d(0, 0, 0)');
-    } else {
-      setToggle('translate3d(0, -67%, 0)');
-    }
-  };
+    toggle ? setToggle(false): setToggle(true);
+  }
 
   return (
     <header
       onClick={toggleHeader}
-      style={{ transform: toggle }}
+      style={{ 
+        transform: toggle ? 'translate3d(0, 0, 0)' : 'translate3d(0, -75px, 0)', 
+        background: toggle ? 'rgb(255, 255, 255)' : 'rgba(187, 187, 187, 0.397)'
+      }}
       className='navigation-overlay flex shadow2'
     >
       {/* <img
@@ -26,10 +25,10 @@ export default function Header() {
       /> */}
 
       <div className='navigation flex column  align-end'>
-        <div className="nav-but flex wrap">
-          <Link to ='/'><p>Home</p></Link>
-          <Link to ='/projects'><p>Projects</p></Link>
-          <Link to ='/about'><p>About</p></Link>
+        <div className='nav-but flex wrap'>
+          <Link className='link' to ='/'><p>Home</p></Link>
+          <Link className='link' to ='/projects'><p>Projects</p></Link>
+          <Link className='link' to ='/about'><p>About</p></Link>
           <a href='https://github.com/josiahjswab' rel='noreferrer noopener' target='_blank'>
             <img src={require('../img/mark.png')} alt='github' height='40' />
           </a>

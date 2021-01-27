@@ -19,13 +19,15 @@ export default function App() {
         <Header />
         <Switch>
           <Route exact path='/' >
-            <NameBanner />
-          </Route>
-          <Route path='/about'>
+            <NameBanner txt='WELCOME'/>
             <About/>
           </Route>
-          <Route path='/projects'>
+          <Route path='/about'>
+            <NameBanner txt='ABOUT'/>
             <Main />
+          </Route>
+          <Route path='/projects'>
+            <NameBanner txt='PROJECTS'/>
             <ProjectCards />
           </Route>
         </Switch>
