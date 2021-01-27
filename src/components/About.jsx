@@ -12,6 +12,7 @@ export default function About() {
             I am Josiah a Southern California based Jr. Developer who is recently certified in the MERN stack by the San Diego Code School. 
           </p>
         </section>
+        <section>This is also</section>
     </div>
   )
 }

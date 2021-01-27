@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Header from './components/Header'
 import NameBanner from './components/NameBanner'
 import About from './components/About'
 import Main from './components/Main'
 import ProjectCards from './components/ProjectCards'
 import Footer from './components/Footer';
+import Cipher from './components/cipher/Cipher';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,7 +13,14 @@ import {
   Link
 } from "react-router-dom";
 
-export default function App() {
+
+const App = () => {
+  useEffect(() => {
+    console.log(`
++-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+ W|e|l|c|o|m|e| |T|r|a|v|e|l|e|r|
++-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+`)
+  }, [])
   return (
     <Router>
       <div className="app-wrapper">
@@ -20,6 +28,8 @@ export default function App() {
         <Switch>
           <Route exact path='/' >
             <NameBanner txt='WELCOME'/>
+            <div className='spacer-sm'></div>
+            <Cipher/>
             <About/>
           </Route>
           <Route path='/about'>
@@ -36,3 +46,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App;
