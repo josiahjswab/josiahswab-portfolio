@@ -6,8 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development parcel public/index.html --open",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
