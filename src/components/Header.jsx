@@ -28,7 +28,7 @@ export default function Header() {
         <div className='nav-but flex wrap'>
           <Link className='link' to ='/'><p>Home</p></Link>
           <Link className='link' to ='/projects'><p>Projects</p></Link>
-          <Link className='link' to ='/about'><p>About</p></Link>
+          {/* <Link className='link' to ='/about'><p>About</p></Link> */}
           <a href='https://github.com/josiahjswab' rel='noreferrer noopener' target='_blank'>
             <img src={require('../img/mark.png')} alt='github' height='40' />
           </a>

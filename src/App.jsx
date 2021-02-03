@@ -6,6 +6,7 @@ import Main from './components/Main'
 import ProjectCards from './components/ProjectCards'
 import Footer from './components/Footer';
 import Cipher from './components/cipher/Cipher';
+import NewHead from './components/NewHead';
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,15 +28,16 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path='/' >
+            <NewHead/>
             <NameBanner txt='WELCOME'/>
             <div className='spacer-sm'></div>
             <Cipher/>
             {/* <About/> */}
           </Route>
-          <Route path='/about'>
+          {/* <Route path='/about'>
             <NameBanner txt='ABOUT'/>
             <Main />
-          </Route>
+          </Route> */}
           <Route path='/projects'>
             <NameBanner txt='PROJECTS'/>
             <ProjectCards />

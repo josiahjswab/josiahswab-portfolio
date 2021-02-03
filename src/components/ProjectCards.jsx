@@ -5,7 +5,6 @@ export default function ProjectCards() {
 
   return (
     <>
-      <h1 className='section-title block-margin'>Projects</h1>
       <div className='project flex column'>
         {/* TODO: Make the title  position: absolute */}
         <div className='card-container flex wrap'>
@@ -29,7 +28,7 @@ export default function ProjectCards() {
             altDescription='Unicode Cipher'
           />
         </div>
-      </div>`
+      </div>
     </>
   );
 }

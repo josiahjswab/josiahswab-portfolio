@@ -3,7 +3,6 @@ import React from "react";
 export default function ProjectCards() {
   return (
     <div className="project block-padding-md flex column">
-      <h1 className="">&#123; projects &#125;</h1>
       {/* TODO: Make the title  position: absolute */}
       <div className="spacer-sm" />
 
