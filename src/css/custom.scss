@@ -17,7 +17,7 @@ body {
   height: 100%;
   min-height: 100vh;
   line-height: 1.6; //Improve the view of text with this.
-  letter-spacing: -0.5px; //Improve the view of text with this.
+  letter-spacing: -0.2px; //Improve the view of text with this.
   background: rgb(74, 112, 122);
   background: linear-gradient(
     180deg,
@@ -37,26 +37,81 @@ body {
     justify-content: space-between;
     align-items: center;
     
-    
     nav ul {
       list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      li {
+        margin-left: 10px;
+      }
     }
   }
   
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
+// Intro 
+.intro {
+  height: 400px;
+  margin: auto;
+  .grid {
+    grid-template-columns: 55% 45%;
+  }
+  img {
+    max-height: 50px;
+  }
+  .card {
+    position: relative;
+    top: 60px;
+    z-index: 100;
+    height: 350px;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    .grid {
+      grid-template-columns: 1fr 2fr;
+    }
+    h1 {
+      margin: auto 0;
+    }
+    div {
+
+    }
+  }
 }
 
-  // flex
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.intro::before {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  height:100px;
+  top: 420px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  transform: skewY(-3deg);
+  --webkit-transform: skewY(-3deg);
+  --moz-transform: skewY(-3deg);
+  --ms-transform: skewY(-3deg);
+}
+
+// Kata
+.kata {
+  height: 340px;
+  background-color: white;
+  padding-top: 120px;
+  color: #333;
+  a {
+    margin-left: 20px;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+  }
 }
 
 .wrap {
@@ -97,13 +152,7 @@ body {
   text-align: left;
 }
 
-.block-padding-sm {
-  padding: 0.5em;
-}
 
-.block-padding-md {
-  padding: 2em;
-}
 
 .spacer-sm {
   height: 1em;
@@ -111,17 +160,6 @@ body {
   width: 100%;
 }
 
-.inline {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.block {
-  display: block;
-}
 
 // something about emphasis styling
 .shadow {

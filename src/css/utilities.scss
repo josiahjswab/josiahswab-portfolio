@@ -1,0 +1,86 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  // overflow: auto;
+  padding: 0 40px;
+}
+
+.sub-container {
+  max-width: 400px;
+}
+
+
+// Display
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+// Padding
+
+.block-padding-sm {
+  padding: 0.5em;
+}
+
+.block-padding-md {
+  padding: 2em;
+}
+
+// Margin
+.mgtbsm {
+  margin: 10px 0;
+}
+.mgtbmd {
+  margin: 20px 0;
+}
+.mgtblg {
+  margin: 30px 0;
+}
+
+// Spacing 
+
+// Fonts
+.sm {
+  font-size: 10px;
+}
+.md {
+  font-size: 20px;
+}
+.lg {
+  font-size: 30px;
+}
+.xlg {
+  font-size: 40px;
+}
+
+// Button
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.609);
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  transform: scale(0.99);
+  background-color: rgba(199, 199, 199, 0.609);
+}
+
+.btn:focus {
+  outline: none;
+}
