@@ -1,11 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import images from '../img/*.svg';
 
 export default function NewHead() {
+  // console.log(images)
+  let content = [
+    '../img/css.svg',
+    '../img/js.svg'
+  ];
+  const caroselContent = images.map((i) => {
+    return (
+      <div className='carousel-item'>
+        <img src={require(`${i}`)} alt=""/>
+      </div>
+    )
+  })
+
+  useEffect(() => {
+  }, [])
+
   return(
     <div>
       <section className="new-head">
         <div className="grid container flex">
-          <h1 className="lg">Welcome</h1>
+          <div className="box">
+          <h1 className="lg">JS</h1>
+
+          </div>
           <nav>
             <ul>
               <li>Home</li>
@@ -17,10 +37,10 @@ export default function NewHead() {
       <section className="intro">
         <div className="grid container">
           <div>
-            <h1 className="xlg">Hey there,</h1>
-            <p className="mgtbmd">Nice to meet you. I'm Josiah. A problem solving web developer who creates responsive and user friendly applications.</p>
+            <h1 className="xlg">Hey there</h1>
+            <p className="mgtbmd">Nice to meet you. I'm Josiah. A web developer creating responsive and user friendly applications.</p>
           </div>
-          <div className="card">
+          <div className="card sm">
             <div className="grid">
               <img src={require("../img/linkedin.png")} alt=""/>
               <p>Visit my Linkedin</p>
@@ -45,8 +65,11 @@ export default function NewHead() {
               <button className="btn btn-outline">Codewar</button>
             </a>
           </div>
-          <div>
-
+          <div className="carousel">
+            <div className='window'>
+              {caroselContent}
+            </div>
+            hi
           </div>
         </div>
       </section>
